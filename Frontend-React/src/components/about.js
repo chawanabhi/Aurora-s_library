@@ -14,15 +14,16 @@ const About = () => {
       </div>
       <div className="about-section-text-container">
         <p className="primary-subheading">About</p>
-        <h1 className="primary-heading">
-          Library Management System
-        </h1>
-        <p className="primary-text">
-        Library management systems help libraries keep track of their documents inventory and loans, and member subscriptions and profiles, sometimes for multiple physical locations.
-        </p>
-        <p className="primary-text">
-          This application is an online Libraray Management System.
-        </p>
+       <h1 className="primary-heading">
+  Library Management System
+</h1>
+<p className="primary-text">
+  A smart system to manage books, members, and transactions with ease.
+</p>
+<p className="primary-text">
+  Designed for Aurora’s PG College to simplify library access anytime, anywhere.
+</p>
+
         {/* <div className="about-buttons-container">
           <button className="secondary-button">Learn More</button>
         </div> */}

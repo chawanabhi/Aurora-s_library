@@ -21,7 +21,7 @@ function DashboardNav() {
                     <li>
                         <Link to="/dashboard">
                             <span> <img class="user_logo" src={logo} alt="logo" /></span>
-                            <span class="title_title">Hamro Library</span>
+                            <span class="title_title">Aurora's Library</span>
                         </Link>
                     </li>
                     <li>

@@ -10,6 +10,34 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 
+//@Service
+//public class BookService {
+//
+//    @Autowired
+//    private BookRepository bookRepository;
+//
+//    public List<Book> getAllBooks(){
+//        List<Book> book = new ArrayList<>();
+//        bookRepository.findAll().forEach(book::add);
+//        return book;
+//    }
+//
+//    public Book getBookById(long id) {
+//        return bookRepository.findById(id).orElseThrow(() -> new BookNotFoundException(id));
+//    }
+//
+//    public Book addBook(Book book) {
+//        return  bookRepository.save(book);
+//    }
+//
+//    public void updateBook(Book book){
+//        bookRepository.save(book);
+//    }
+//    public void deleteBook(long id){
+//        bookRepository.deleteById(id);
+//    }
+//}
+
 @Service
 public class BookService {
 
@@ -22,18 +50,28 @@ public class BookService {
         return book;
     }
 
+
+    // ✅ Fetch book by ID or throw exception
     public Book getBookById(long id) {
-        return bookRepository.findById(id).orElseThrow(() -> new BookNotFoundException(id));
+        return bookRepository.findById(id)
+                .orElseThrow(() -> new BookNotFoundException(id));
     }
 
+    // ✅ Add new book
     public Book addBook(Book book) {
-        return  bookRepository.save(book);
+        return bookRepository.save(book);
     }
 
-    public void updateBook(Book book){
-        bookRepository.save(book);
+    // ✅ Update book
+    public void updateBook(Book book) {
+        bookRepository.save(book); // Works for update if ID exists
     }
-    public void deleteBook(long id){
+
+    // ✅ Delete book
+    public void deleteBook(long id) {
+        if (!bookRepository.existsById(id)) {
+            throw new BookNotFoundException(id);
+        }
         bookRepository.deleteById(id);
     }
 }

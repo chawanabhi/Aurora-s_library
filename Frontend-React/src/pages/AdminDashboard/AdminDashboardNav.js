@@ -17,7 +17,7 @@ function AdminDashboardNav() {
                     <li>
                         <Link to="/admindashboard">
                             <span> <img class="user_logo" src={logo} alt="logo" /></span>
-                            <span class="title_title">Hamro Library</span>
+                            <span class="title_title">Aurora's Library</span>
                         </Link>
                     </li>
                     <li>
@@ -57,6 +57,7 @@ function AdminDashboardNav() {
                             <span class="title">Book Issue History</span>
                         </Link>
                     </li>
+                    
                     <li>
                         <Link to="/admindashboard/setting">
                             <span class="icon"><IonIcon icon={settingsOutline}></IonIcon></span>

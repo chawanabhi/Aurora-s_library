@@ -527,3 +527,16 @@ nav {
     display: none;
   }
 }
+.footer-section-two {
+  background-color: #407e1a;
+  padding: 20px;
+  border-radius: 10px;
+  color: white; /* Ensure text is visible */
+}
+.footer-section-columns span {
+  color: white;
+}
+
+.footer-section-columns span:hover {
+  text-decoration: underline;
+}

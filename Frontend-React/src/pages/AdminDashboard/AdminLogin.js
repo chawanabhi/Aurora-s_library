@@ -37,7 +37,7 @@ function AdminLogin() {
             </div>
             <div class="flex-container">
                 <img src={logo} alt="" />
-                <h2>Welcome to Hamro Library</h2>
+                <h2>Welcome to Aurora's Library</h2>
             </div>
             <div class="row">
                 <h1>Admin Login</h1>

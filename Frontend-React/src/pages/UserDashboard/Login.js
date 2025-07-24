@@ -112,7 +112,7 @@ function Login() {
       </div>
       <div class="flex-container">
         <img class="navLogo" src={logo} alt="" />
-        <h1 class="title">Welcome to Hamro Library</h1>
+        <h1 class="title">Welcome to Aurora's Library</h1>
       </div>
 
       <div

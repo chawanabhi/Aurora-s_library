@@ -13,12 +13,12 @@ const Home = () => {
           <img src={BannerBackground} alt="" />
         </div>
         <div className="home-text-section">
-          <p className="primary-subheading">Library Management System</p>
+          <p className="primary-subheading">Welcome to the Library Management System of Aurora’s PG College.</p>
           <h1 className="primary-heading">
-            Your Favourite Books Place is our Library.
+            Your Gateway to Knowledge Starts Here.
           </h1>
           <p className="primary-text">
-            Welcome to our Libraray Managemnet System, where you can find all kinds of your favourite book.
+           Here, you can easily explore, search, and manage a wide collection of your favorite books across all genres and categories. Whether you’re a casual reader or a research enthusiast, our library is your go-to destination for knowledge and inspiration.
           </p>
           {/* <button className="secondary-button">
             Explore 
